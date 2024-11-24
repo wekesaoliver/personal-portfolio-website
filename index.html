@@ -594,7 +594,7 @@
             <!--==================== PORTFOLIO 2 ====================-->
         
             <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/portfolio3.png" alt="" class="portfolio__img">
+                <img src="./packages/images/portfolio3.PNG" alt="" class="portfolio__img">
 
                 <div class="portfolio_">
                     <h3 class="portfolio__title">Tic tac toe</h3>
@@ -778,35 +778,43 @@
                     </div>
                 </div>
 
-                <form action="" class="contact__form grid">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact__form grid">
                     <div class="contact__inputs grid">
+                        
                         <div class="contact__content">
+                            <input type="hidden" name="access_key" value="1b651e37-2760-4785-849b-ea6c577ea8f9">
                             <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
+                            <input type="text" name="name" class="contact__input" required>
                         </div>
 
                         <div class="contact__content">
                             <label for="" class="contact__label">E-mail</label>
-                            <input type="email" class="contact__input">
+                            <input type="email" name="email" class="contact__input" required>
                         </div>
                     </div>
 
                     <div class="contact__content">
                         <label for="" class="contact__label">Subject</label>
-                        <input type="text" class="contact__input">
+                        <input name="Subject" class="contact__input" required>
                     </div>
 
                     <div class="contact__content">
                         <label for="" class="contact__label">Description</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        <textarea name="message" id="" cols="0" rows="7" class="contact__input" required></textarea>
                     </div>
-
                     <div>
-                        <a href="#" class="button button--flex">
-                            Send message
+                        <button type="submit" class="button button--flex">Send message
+                        <i class="uil uil-message button__icon"></i>
+                        </button>
+                    </div>
+                    
+
+                    <!-- <div>
+                        <a href="" class="button button--flex">
+                            <button type="submit">Send message</button>
                             <i class="uil uil-message button__icon"></i>
                         </a>
-                    </div>
+                    </div> -->
                 </form>
             </div>
 
