@@ -2,7 +2,7 @@
 
 ## Table of contents
 
-![Potfolio Website](images/screenshot.png)
+![Potfolio Website](packages/images/screenshot.png)
 
 - [General info](#general-info)
 - [Technologies](#technologies)
